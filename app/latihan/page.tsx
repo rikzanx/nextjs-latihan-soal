@@ -3,6 +3,17 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation"
 import { bankSoal } from "../data/bankSoal";
 import { useRouter } from "next/navigation";
+import { Suspense } from "react";
+
+export default function Latihan() {
+  return (
+    <Suspense fallback={<p className="p-6 text-center">Loading...</p>}>
+      <LatihanContent />
+    </Suspense>
+  );
+}
+
+
 
 interface Soal {
   pertanyaan: string;
@@ -13,7 +24,7 @@ interface Soal {
 const shuffle = <T,>(arr: T[]): T[] =>
   [...arr].sort(() => Math.random() - 0.5);
 
-export default function Latihan() {
+function LatihanContent() {
   const searchParams = useSearchParams();
   const judulPelajaran = searchParams.get("pelajaran") || "Latihan Soal";
   const [soalAcak, setSoalAcak] = useState<Soal[] | null>(null);
