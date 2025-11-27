@@ -1,21 +1,11 @@
+import { soalPengantarSI } from "./soalPengantarSistemInformasi";
+
 export const bankSoal: Record<string, {
   pertanyaan: string;
   jawaban: string[];
   benar: string;
 }[]> = {
-  "Matematika": [
-    {
-      pertanyaan: "Hasil 4 × 2?",
-      jawaban: ["8", "6", "4", "12"],
-      benar: "8"
-    },
-    {
-      pertanyaan: "Bentuk pecahan dari 0.5?",
-      jawaban: ["1/2", "1/5", "5/10", "2/5"],
-      benar: "1/2"
-    }
-  ],
-
+  "Pengantar Sistem Informasi": soalPengantarSI,
   "Bahasa Indonesia": [
     {
       pertanyaan: "Antonim dari 'besar'?",

@@ -5,11 +5,12 @@ export default function Home() {
   const router = useRouter();
 
   const pelajaranList = [
-    "Matematika",
-    "Bahasa Indonesia",
-    "Pendidikan Pancasila",
-    "IPA Dasar",
-    "IPS Dasar"
+    "Pengantar Sistem Informasi",
+    "Sistem Operasi",
+    "Matematika Dasar",
+    "Algoritma dan Pemrograman",
+    "Pendidikan Agama Islam",
+    "Pendidikan Kewarganegaraan"
   ];
 
   const pilihPelajaran = (nama: string) => {

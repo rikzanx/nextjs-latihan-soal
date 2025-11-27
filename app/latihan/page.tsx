@@ -120,7 +120,7 @@ function LatihanContent() {
 
         <div className="space-y-4">
           {soalAcak.map((s, i) => (
-            <div key={i} className="bg-white shadow-md p-4 rounded-xl">
+            <div key={i} className="bg-white dark:bg-gray-800 shadow-md p-4 rounded-xl">
               <p className="font-semibold mb-2">{i + 1}. {s.pertanyaan}</p>
 
               {s.jawaban.map((j, idx) => {
@@ -170,7 +170,7 @@ function LatihanContent() {
         Soal {halaman + 1} dari {soalAcak.length}
       </h2>
 
-      <div className="bg-white shadow-md p-4 rounded-xl mb-5">
+      <div className="bg-white dark:bg-gray-800 shadow-md p-4 rounded-xl mb-5">
         <p className="font-semibold mb-3 text-base">
           {soal.pertanyaan}
         </p>
