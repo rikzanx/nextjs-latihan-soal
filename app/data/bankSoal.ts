@@ -1,4 +1,5 @@
 import { soalPengantarSI } from "./soalPengantarSistemInformasi";
+import { soalSistemOperasi } from "./soalSistemOperasi";
 
 export const bankSoal: Record<string, {
   pertanyaan: string;
@@ -6,6 +7,7 @@ export const bankSoal: Record<string, {
   benar: string;
 }[]> = {
   "Pengantar Sistem Informasi": soalPengantarSI,
+  "Sistem Operasi": soalSistemOperasi,
   "Bahasa Indonesia": [
     {
       pertanyaan: "Antonim dari 'besar'?",
