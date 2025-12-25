@@ -37,11 +37,11 @@ function LatihanContent() {
 
   useEffect(() => {
     const soalPelajaran = bankSoal[judulPelajaran] || [];
-    // const acak = shuffle(soalPelajaran).map((s) => ({
-    //   ...s,
-    //   jawaban: shuffle(s.jawaban),
-    // }));
-    setSoalAcak(soalPelajaran);
+    const acak = soalPelajaran.map((s) => ({
+      ...s,
+      jawaban: shuffle(s.jawaban),
+    }));
+    setSoalAcak(acak);
     setJawabanUser(Array(soalPelajaran.length).fill(null));
   }, [judulPelajaran]);
 
