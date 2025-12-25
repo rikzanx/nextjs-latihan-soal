@@ -1,11 +1,13 @@
 import { soalPengantarSI } from "./soalPengantarSistemInformasi";
 import { soalSistemOperasi } from "./soalSistemOperasi";
+import { soalPendidikanKewarganegaraan } from "./soalPendidikanKewarganegaraan";
 
 export const bankSoal: Record<string, {
   pertanyaan: string;
   jawaban: string[];
   benar: string;
 }[]> = {
+  "Pendidikan Kewarganegaraan": soalPendidikanKewarganegaraan,
   "Pengantar Sistem Informasi": soalPengantarSI,
   "Sistem Operasi": soalSistemOperasi,
   "Bahasa Indonesia": [
